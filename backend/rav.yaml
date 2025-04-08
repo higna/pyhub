@@ -1,0 +1,12 @@
+scripts:
+  startapp:
+    - python manage.py startapp
+  server:
+    - python manage.py runserver 8001
+  makemigrations:
+    - python manage.py makemigrations
+  migrate:
+    - python manage.py migrate
+  shell:
+    - python manage.py shell
+
