@@ -1,0 +1,21 @@
+scripts:
+  startsapp:
+    - cd src/apps && python ../manage.py startapp
+  startapp:
+    - cd src && python manage.py startapp
+  removeapp:
+    - cd src && python manage.py removeapp
+  server:
+    - cd src && python manage.py runserver 8001
+  makemigrations:
+    - cd src && python manage.py makemigrations
+  migrate:
+    - cd src && python manage.py migrate
+  shell:
+    - cd src && python manage.py shell
+  requirements:
+    - pip install -r requirements.txt
+  curl_signup: |
+    curl -X POST -H "Content-Type: application/json" http://127.0.0.1:8001/api/authe/signup -d "{\"username\": \"stoney\", \"email\": \"higboko@gmail.com\", \"password\": \"stoney\"}"
+  curl_login: |
+    curl -X POST -H "Content-Type: application/json" http://127.0.0.1:8001/api/authe/login -d "{\"username\": \"higboko@gmail.com\", \"email\": \"higboko@gmail.com\", \"password\": \"stoney\"}"

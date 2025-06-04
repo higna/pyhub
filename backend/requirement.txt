@@ -1,1 +1,24 @@
- 
+ annotated-types
+asgiref
+Django
+django-ninja
+django-ninja-jwt[crypto]
+django-ninja-jwt
+django-cors-headers
+fire
+markdown-it-py
+mdurl
+pillow
+pydantic
+pydantic_core
+pydantic[email]
+Pygments
+PyYAML
+rav
+rich
+sqlparse
+termcolor
+typing-inspection
+typing_extensions
+tzdata
+PyPDF2
